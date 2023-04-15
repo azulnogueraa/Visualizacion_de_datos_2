@@ -22,6 +22,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
       legend: true,
     },
     marks: [
+
       Plot.geo(barrios, {
         fill: d => {
           let nombreBarrio = d.properties.BARRIO
@@ -33,16 +34,9 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
         strokeOpacity: 5,
 
         title: d => `${d.properties.BARRIO}\n${d.properties.DENUNCIAS} denuncias`,
-        title: d => `trapito`,
-      }),
-      Plot.dot(data.filter(d => d.prestacion === 'Cuidacoches (Trapitos)'), { // Filtramos los datos solo para el barrio "Belgrano"
-
-        x: 'lon',
-        y: 'lat',
-        r: 3,
-        stroke: 'none',
-        fill: 'red'
-      }),
+        // title: d => `trapito`,
+      })
+      
     ],
   })
   // addTooltips(chart);
