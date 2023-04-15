@@ -1,4 +1,4 @@
-import addTooltips from "./addTooltips.js";
+// import addTooltips from "./addTooltips.js";
 const mapaFetch = d3.json('barrios-caba.geojson')
 const dataFetch = d3.dsv(';', 'dataset_seguridad_2022.csv', d3.autoType)
 
@@ -33,10 +33,19 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
         strokeOpacity: 5,
 
         title: d => `${d.properties.BARRIO}\n${d.properties.DENUNCIAS} denuncias`,
-      })
+        title: d => `trapito`,
+      }),
+      Plot.dot(data.filter(d => d.prestacion === 'Cuidacoches (Trapitos)'), { // Filtramos los datos solo para el barrio "Belgrano"
+
+        x: 'lon',
+        y: 'lat',
+        r: 3,
+        stroke: 'none',
+        fill: 'red'
+      }),
     ],
   })
-  addTooltips(chartMap);
+  // addTooltips(chart);
   /* Agregamos al DOM la visualización chartMap */
-  d3.select('#chart').append(() => chart)
+  d3.select('#chart').append(() => chartMap)
 })
