@@ -1,5 +1,6 @@
+import addTooltips from "./addTooltips.js";
 const mapaFetch = d3.json('barrios-caba.geojson')
-const dataFetch = d3.dsv(';', 'seguridad_2020.csv', d3.autoType)
+const dataFetch = d3.dsv(';', 'dataset_seguridad_2022.csv', d3.autoType)
 
 Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
 
@@ -35,7 +36,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
       })
     ],
   })
-
+  addTooltips(chartMap);
   /* Agregamos al DOM la visualización chartMap */
-  d3.select('#chart').append(() => chartMap)
+  d3.select('#chart').append(() => chart)
 })
