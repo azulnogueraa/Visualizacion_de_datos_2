@@ -1,6 +1,5 @@
-// import addTooltips from "./addTooltips.js";
 const mapaFetch = d3.json('barrios-caba.geojson')
-const dataFetch = d3.dsv(';', 'dataset_seguridad_2022.csv', d3.autoType)
+const dataFetch = d3.dsv(';', 'dataset_seguridad_2021.csv', d3.autoType)
 
 Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
 
@@ -16,7 +15,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
     color: {
       // Quantize continuo (cant. denuncias) -> discreto (cant. colores)
       type: 'quantize', 
-      n: 10,
+      n: 9,
       scheme: 'blues',
       label: 'grado de inseguridad',
       legend: true,
