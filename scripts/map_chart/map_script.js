@@ -29,13 +29,15 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
           let cantReclamos = inseguridadPorBarrio.get(nombreBarrio).length
           return cantReclamos
         },
-
         stroke: 'grey',
         strokeOpacity: 5,
 
         title: d => `${d.properties.BARRIO}\n${d.properties.DENUNCIAS} denuncias`,
         // title: d => `trapito`,
-      })
+      }),
+      // Plot.geo(barrios {
+      //   href: () =>
+      // })
       
     ],
   })
