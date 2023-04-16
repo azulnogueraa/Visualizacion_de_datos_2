@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Inseguridad En Buenos Aires</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="material/rocket.png" type="png">
+  </head>
+  <body>
+    <header class="header">
+      <p class="logo"><b>Developers:</b> Noguera Azul & Rocio Gonzalez</p>
+      <a href="https://github.com/azulnogueraa/vd_s1_parcial_Noguera_Gonzalez.git" target="_blank">
+        <img class="github" src="material/github-142-svgrepo-com.svg" alt="me">
+      </a>
+    </header>
 
-<title>Inseguridad En Buenos Aires</title>
+    <main>
+      <div class="intro">
+        <h1>Inseguridad en Buenos Aires</h1>
+        <p> Exiplación de la inseguridad de Buenos Aires</p>
+        <a href="https://buenosaires.gob.ar/compromisos/mapa-del-delito-con-acceso-de-los-vecinos" target="_blank">
+          <button class="blue_button">Más Información</button>
+        </a>
+      </div>
 
-<head> 
-	<link rel = "stylesheet" href = "style.css">
-	<link rel="shortcut icon" href="material/rocket.png" type="png">
-</head>
+      <!-- grilla de mapas coropleticos -->
+      <!-- <div class="chartdivs"> -->
+		<!--chart1-->
+        <!-- <div id="chart1"> -->
+			
+		<!-- </div> -->
+		<!--chart1-->
+        <!-- <div id="chart2"> -->
+		
+		<!-- </div> -->
+		<!--chart1-->
+        <!-- <div id="chart3"> -->
 
-<header class="header">
-	<p class="logo"> <b>Developers:</b> Noguera Azul & Rocio Gonzalez </p>
-	<a href="https://github.com/azulnogueraa/vd_s1_tp2_Noguera_Gonzalez.git"><img class="github" src="material/github.svg" alt="me"></a>
-</header>
+		<!-- </div> -->
 
-  <main>
-	<div class="intro">
-	  <h1>Inseguridad en Buenos Aires</h1>
-	  <p> Exiplación de la inseguridad de Buenos Aires</p>
-	  <a href="//github.com/visualizacion-de-datos-utdt/vd_astronautas" target="_blank"> <button class="blue_button">Astronautas Dataset</button> </a>
-	</div>
+		<!-- <div  class="chartMap" id="chart"></div> -->
 
-	<!-- slider de mapas coropleticos -->
-	<div class="slider-container">  
-
-		<div id="chart"> </div>
-    		<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    		<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
-    		<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
-    		<script src="palermo_script.js"></script>
-	</div>  
-
+        <div id="chart"></div>
+    	<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
+    	<script src="map_script.js"></script>
+      </div>
+    </main>
+  </body>
 </html>
