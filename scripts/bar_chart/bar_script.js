@@ -10,9 +10,9 @@ Promise.all([
     // Trazar el gráfico de barras
     let chart = Plot.plot({
         marks: [
-        Plot.barY(data, {
-            x: 'categoria',
-            y: () => 1, //completar con cantidad por anio
+        Plot.line(data, {
+            x: 'fecha_ingreso',
+            y: () => 1,
         }),
         ],
         marginLeft: 200,
