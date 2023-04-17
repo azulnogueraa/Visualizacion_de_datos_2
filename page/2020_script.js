@@ -1,7 +1,7 @@
-const mapaFetch = d3.json('barrios-caba.geojson')
-const dataFetch = d3.dsv(';', 'dataset_seguridad_2020.csv', d3.autoType)
+const mapaFetch1 = d3.json('barrios-caba.geojson')
+const dataFetch1 = d3.dsv(';', 'dataset_seguridad_2020.csv', d3.autoType)
 
-Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
+Promise.all([mapaFetch1, dataFetch1]).then(([barrios, data]) => {
 
   /* Agrupamos reclamos de inseguridad x barrio */
   const inseguridadPorBarrio = d3.group(data, d => d.domicilio_barrio) // crea un Map
