@@ -1,14 +1,14 @@
-const mapaFetch = d3.json('barrios-caba.geojson')
-const dataFetch = d3.dsv(';', 'dataset_seguridad_2021.csv', d3.autoType)
+const mapaFetch2 = d3.json('barrios-caba.geojson')
+const dataFetch2 = d3.dsv(';', 'dataset_seguridad_2021.csv', d3.autoType)
 
-Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
+Promise.all([mapaFetch2, dataFetch2]).then(([barrios, data]) => {
 
   /* Agrupamos reclamos de inseguridad x barrio */
   const inseguridadPorBarrio = d3.group(data, d => d.domicilio_barrio) // crea un Map
   console.log('inseguridadPorBarrio', inseguridadPorBarrio)
   
   
-  let chartMap = Plot.plot({
+  let chartMap2 = Plot.plot({
     projection: {
       type: 'mercator',
       domain: barrios, // Objeto GeoJson a encuadrar
@@ -42,5 +42,5 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
 
 
   /* Agregamos al DOM la visualización chartMap */
-  d3.select('#chart2').append(() => chartMap)
+  d3.select('#chart2').append(() => chartMap2)
 })
