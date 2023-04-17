@@ -17,33 +17,35 @@ let chart = Plot.plot({
     Plot.rectY(
         data,
         Plot.binX(
-        {
-            y: 'count',
-            title: d => JSON.stringify(d),
-        },
-        {
-            x: d => d3.timeParse('%d/%m/%Y')(d.fecha_ingreso), 
-            thresholds: d3.timeMonth,
-        },
-    ),
+            {
+                y: 'count',
+                title: d => JSON.stringify(d),
+            },
+            {
+                x: d => d3.timeParse('%d/%m/%Y')(d.fecha_ingreso), 
+                thresholds: d3.timeYear,
+            },
+            { 
+                fillOpacity: 0.5,
+                fill: 'black',
+            }
+        ),
     ),
     Plot.rectY(
         data,
         Plot.binX(
-        {
-            y: 'count',
-            title: d => JSON.stringify(d),
-        },
-        {
-            x: d => d3.timeParse('%d/%m/%Y')(d.fecha_ingreso), 
-            thresholds: d3.timeYear,
-        },
-        
-    ),
-    { 
-        opacity: 0.2,
-        fill: 'magenta',
-    }
+            {
+                y: 'count',
+                title: d => JSON.stringify(d),
+            },
+            {
+                x: d => d3.timeParse('%d/%m/%Y')(d.fecha_ingreso), 
+                thresholds: d3.timeMonth,
+            },
+            {
+                fill: 'lightblue',
+            }
+        ),
     ),
     ],
     y: {
