@@ -108,7 +108,7 @@ body{
 }
 
 
-/* .chartdivs{
+.chartdivs{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -124,9 +124,9 @@ body{
 }
 .chart3{
     grid-area: box3;
-} */
+} 
 
 /* #plot1, #plot2, #plot3 {
   width: 100%;
   height: 300px;
-}    */
+}    
