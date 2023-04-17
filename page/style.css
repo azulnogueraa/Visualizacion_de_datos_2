@@ -34,6 +34,8 @@ body{
   align-items: center;
   background-color: #f5f5f5;
   margin-right: 20px;
+  
+
 }
 
 .nav-items a {
@@ -49,10 +51,11 @@ body{
   align-items: center;
   width: 100%;
   height: 520px;
-  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%), url("material/police.jpeg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url("material/michael-fortsch-y5LaV9IEC_g-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
 }
 
 .intro h1 {
@@ -126,7 +129,27 @@ body{
     grid-area: box3;
 } 
 
-/* #plot1, #plot2, #plot3 {
-  width: 100%;
-  height: 300px;
-}    
+  .chartdivs p {
+    font-size: 18px;
+    color: #152f67;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  
+  .chart1 legend{
+    align-items:center;
+    padding-left: 5px;
+    background-color: green;
+  }
+
+  /* #plot1, #plot2, #plot3 {
+    width: 100%;
+    height: 300px;
+}     */
+
+/* Cosas a hacer
+  - arreglar las escalas de los mapas de los 3 años
+  - centrar la leyenda de los mapas de los 3 añoa
+  - hacer el dotgraph de las ciudades con mas inseguridad 
+
+*/
