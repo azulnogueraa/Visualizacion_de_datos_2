@@ -27,7 +27,7 @@ Promise.all([mapaFetch2, dataFetch2]).then(([barrios, data]) => {
       Plot.geo(barrios, {
         fill: d => {
           let nombreBarrio = d.properties.BARRIO
-          let cantReclamos = inseguridadPorBarrio.get(nombreBarrio).length
+          let cantReclamos = (inseguridadPorBarrio.get(nombreBarrio).length/3665)*100
           return cantReclamos
         },
         stroke: 'grey',
