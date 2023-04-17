@@ -24,11 +24,8 @@ let chart = Plot.plot({
             {
                 x: d => d3.timeParse('%d/%m/%Y')(d.fecha_ingreso), 
                 thresholds: d3.timeYear,
+                fillOpacity: 0.1,
             },
-            { 
-                fillOpacity: 0.5,
-                fill: 'black',
-            }
         ),
     ),
     Plot.rectY(
@@ -41,10 +38,8 @@ let chart = Plot.plot({
             {
                 x: d => d3.timeParse('%d/%m/%Y')(d.fecha_ingreso), 
                 thresholds: d3.timeMonth,
+                fill: 'blue',
             },
-            {
-                fill: 'lightblue',
-            }
         ),
     ),
     ],
