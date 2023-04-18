@@ -112,7 +112,7 @@ let chart = Plot.plot({
     d3.select('#chart').append(() => chart)
     })
 
-d3.dsv(';', 'dataset_2022.csv', d3.autoType).then(data => {   
+d3.dsv(';', '../../data/dataset_seguridad_2020.csv', d3.autoType).then(data => {   
 let chart = Plot.plot({ 
     marks: [
     Plot.rectY(
@@ -143,9 +143,9 @@ let chart = Plot.plot({
 
 
 Promise.all([
-    d3.csv('dataset_2020.csv', d3.autoType),
-    d3.csv('dataset_2021.csv', d3.autoType),
-    d3.csv('dataset_2022.csv', d3.autoType),
+    d3.csv('../../data/dataset_seguridad_2020.csv', d3.autoType),
+    d3.csv('../../data/dataset_seguridad_2021.csv', d3.autoType),
+    d3.csv('../../data/dataset_seguridad_2022.csv', d3.autoType),
 ]).then(([data2020, data2021, data2022]) => {
 
     const dataByYear = [        
