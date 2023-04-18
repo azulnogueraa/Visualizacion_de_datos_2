@@ -1,5 +1,5 @@
 const mapaFetch_p3 = d3.json('../../data/palermo-caba.geojson')
-const dataFetch_p3 = d3.dsv(';', '../../data/dataset_seguridad_2022.csv', d3.autoType)
+const dataFetch_p3 = d3.dsv(';', '../../data/dataset_2022.csv', d3.autoType)
 
 Promise.all([mapaFetch_p3, dataFetch_p3]).then(([barrios, data]) => {
   
@@ -27,7 +27,7 @@ Promise.all([mapaFetch_p3, dataFetch_p3]).then(([barrios, data]) => {
       Plot.image(data.filter(d => d.categoria === 'SEGURIDAD' && d.domicilio_barrio === 'PALERMO'), {
         x: 'lon',
         y: 'lat',
-        src: './material/police-car-light-svgrepo-com.svg'
+        src: '../../material/police-car-light-svgrepo-com.svg'
       })
       
     ],
