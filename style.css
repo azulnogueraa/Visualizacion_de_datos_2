@@ -73,7 +73,11 @@ body{
   color: #555454;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 20px 0;
+  padding: 0 10px;
+  text-align: center;
 }
+
+
 
 .intro button {
   background-color: #152f67;
