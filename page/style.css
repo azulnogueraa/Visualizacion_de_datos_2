@@ -12,6 +12,7 @@ body{
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    margin-bottom: 10px;
   }
 
 .header .logo {
@@ -112,8 +113,9 @@ body{
 
 
 .chartdivs{
-    height: 100vh;
+    height: 80vh;
     display: grid;
+    /* grid-template-rows: 50px 10px; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "box1 box2 box3";
     
@@ -135,12 +137,27 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
   }
-  
-  .chart1 legend{
-    align-items:center;
-    padding-left: 5px;
-    background-color: green;
-  }
+ 
+
+.palermo {
+  height: 0vh;
+  width: 60vh;
+    display: grid;
+    /* grid-template-rows: 50px 10px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "box4 box5 box6";
+}
+
+.chart_p1{
+  grid-area: box4;
+}
+.chart_p2{
+  grid-area: box5;
+}
+.chart_p3{
+  grid-area: box6;
+} 
+
 
   /* #plot1, #plot2, #plot3 {
     width: 100%;
