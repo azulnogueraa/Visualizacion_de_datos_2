@@ -3,7 +3,7 @@ d3.json('https://cdn.jsdelivr.net/npm/d3-time-format@3/locale/es-ES.json').then(
   d3.timeFormatDefaultLocale(locale)
 })
 
-d3.dsv(';', 'dataset_2020.csv', d3.autoType).then(data => {   
+d3.dsv(';', '../../data/dataset_2020.csv', d3.autoType).then(data => {   
 let chart = Plot.plot({  
     marks: [
     Plot.rectY(
@@ -32,7 +32,7 @@ let chart = Plot.plot({
     d3.select('#chart').append(() => chart)
     })    
 
-d3.dsv(';', 'dataset_2021.csv', d3.autoType).then(data => {   
+d3.dsv(';', '../../data/dataset_2021.csv', d3.autoType).then(data => {   
 let chart = Plot.plot({  
     marks: [
     Plot.rectY(
@@ -63,8 +63,8 @@ let chart = Plot.plot({
 
 
 Promise.all([
-d3.dsv(';', 'dataset_2020.csv', d3.autoType),
-d3.dsv(';', 'dataset_2021.csv', d3.autoType),
+d3.dsv(';', '../../data/dataset_2020.csv', d3.autoType),
+d3.dsv(';', '../../data/dataset_2021.csv', d3.autoType),
 ]).then(([data2020, data2021]) => {
     let chart = Plot.plot({
         marks: [
