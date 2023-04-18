@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Inseguridad En Buenos Aires</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="material/police-officer-medium-dark-skin-tone-svgrepo-com.svg" type="png">
+  </head>
+  <body>
+
+    <header class="header">
+      <p class="logo"><b>Developers:</b> Noguera Azul & Rocio Gonzalez</p>
+      <a href="https://github.com/azulnogueraa/vd_s1_parcial_Noguera_Gonzalez.git" target="_blank">
+        <img class="github" src="material/github-142-svgrepo-com.svg" alt="me">
+      </a>
+    </header>
+
+    <main>
+      <div class="intro">
+        <h1>Inseguridad en Buenos Aires</h1>
+        <p> Exiplación de la inseguridad de Buenos Aires</p>
+        <a href="https://buenosaires.gob.ar/compromisos/mapa-del-delito-con-acceso-de-los-vecinos" target="_blank">
+          <button class="blue_button">Más Información</button>
+        </a>
+      </div>
+    </main>
+      
+      <!-- grilla de mapas coropleticos -->
+    <div class="chartdivs"> 
+		    <!--chart1-->
+      <div id="chart1"> <p><b>Año 2020</b></p>  </div> 
+		    <!--chart2-->
+      <div id="chart2"> <p><b>Año 2021</b></p> </div> 
+		    <!--chart3-->
+      <div id="chart3">  <p><b>Año 2022</b></p> </div> 
+
+    </div>
+
+    <div class="palermo">
+        <!--chart1-->
+      <div id="chart_p1">   </div> 
+        <!--chart2-->
+      <div id="chart_p2">  </div> 
+        <!--chart3-->
+      <div id="chart_p3">  </div> 
+    
+    </div>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="2020_script.js"></script>
+    <script src="2021_script.js"></script>
+    <script src="2022_script.js"></script>
+    <script src="p1_script.js"></script>
+    <script src="p2_script.js"></script>
+    <script src="p3_script.js"></script>
+
+  </body>
+
+</html>
