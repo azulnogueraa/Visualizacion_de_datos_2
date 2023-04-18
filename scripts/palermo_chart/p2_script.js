@@ -27,7 +27,7 @@ Promise.all([mapaFetch_p2, dataFetch_p2]).then(([barrios, data]) => {
       Plot.image(data.filter(d => d.categoria === 'SEGURIDAD' && d.domicilio_barrio === 'PALERMO'), {
         x: 'lon',
         y: 'lat',
-        src: './material/police-car-light-svgrepo-com.svg'
+        src: '../../material/police-car-light-svgrepo-com.svg'
       })
       
     ],
