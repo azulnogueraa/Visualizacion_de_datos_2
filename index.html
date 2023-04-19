@@ -33,6 +33,7 @@
       </div>
     </main>
     
+  <div class="body">
     <h2>¿Cuáles son las zonas más inseguras de la ciudad? Descubrí los barrios más peligrosos de la Ciudad de Buenos Aires</h2>
       <p class="textos">En este mapa coroplético se pueden observar los barrios de la Ciudad de Buenos Aires con mayor cantidad 
         de denuncias por inseguridad en los últimos años. Los datos muestran que la inseguridad no es un fenómeno uniforme en la ciudad, 
@@ -50,6 +51,7 @@
 
     </div>
 
+    
     <h2>¡Alerta en Palermo! Mirá los sectores más inseguros del barrio más popular de Buenos Aires</h2>
       <p class="textos">Palermo es uno de los barrios más populares de Buenos Aires, con una gran cantidad de bares, 
         restaurantes y tiendas de moda. Sin embargo, en los últimos años también se ha convertido en una zona de 
@@ -58,9 +60,10 @@
         que han sido víctimas de la inseguridad en el barrio, y analizamos las medidas que se están tomando para garantizar 
         la seguridad en la zona.</p>
 
+
     <div class="palermo">
         <!--chart1-->
-      <div id="chart_p1">   </div> 
+      <div id="chart_p1">  </div> 
         <!--chart2-->
       <div id="chart_p2">  </div> 
         <!--chart3-->
@@ -73,7 +76,11 @@
       los últimos dos años. Descubre si la situación ha mejorado o empeorado, y qué medidas se han tomado para combatir la inseguridad. 
       Además, te presentamos un análisis detallado de las cifras y de las políticas públicas implementadas para mejorar la seguridad en la ciudad.</p>
 
-      
+    <div class="barchart">
+      <div id="bar_chart"></div>
+    </div>
+    
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
@@ -83,6 +90,7 @@
     <script src="./scripts/palermo_chart/p1_script.js"></script>
     <script src="./scripts/palermo_chart/p2_script.js"></script>
     <script src="./scripts/palermo_chart/p3_script.js"></script>
+    <script src="./scripts/bar_chart/bar_script.js"></script>
 
   </body>
 
