@@ -116,6 +116,10 @@ body{
   background-color: #243d9f8f;
 }
 
+.body {
+  margin-left: 45px;
+  margin-right: 45px;
+}
 
 .chartdivs{
     height: 80vh;
@@ -136,12 +140,12 @@ body{
     grid-area: box3;
 } 
 
-  .chartdivs p {
-    font-size: 15px;
-    color: #152f67;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-  }
+.chartdivs p {
+  font-size: 15px;
+  color: #152f67;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
  
 h2 {
   font-size: 24px;
@@ -176,6 +180,13 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
 }
+
+.barchart {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
 
 
   /* #plot1, #plot2, #plot3 {
