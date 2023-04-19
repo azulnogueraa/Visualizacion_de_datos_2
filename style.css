@@ -69,7 +69,7 @@ body{
 }
 
 .intro p {
-  font-size: 15px;
+  font-size: 16px;
   color: rgb(255, 255, 255);
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   margin: 20px 0;
@@ -144,11 +144,12 @@ body{
   }
  
 h2 {
-  font-size: 18px;
+  font-size: 24px;
     color: #152f67;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
+
 .palermo {
   /* height: 0vh; */
   /* width: 80vh; */
@@ -171,9 +172,9 @@ h2 {
 } 
 
 .textos {
-  text-align: center;
+  text-align: justify;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 
