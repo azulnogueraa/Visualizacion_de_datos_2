@@ -122,8 +122,10 @@ body{
 }
 
 .chartdivs{
-    height: 80vh;
+    /* height: 70vh; */
     display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
     /* grid-template-rows: 50px 10px; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "box1 box2 box3";
@@ -148,6 +150,7 @@ body{
 }
  
 h2 {
+  padding-top: 10px;
   font-size: 24px;
     color: #152f67;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -157,12 +160,14 @@ h2 {
 .palermo {
   /* height: 0vh; */
   /* width: 80vh; */
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: grid;
     grid-gap: 25vh;
     /* grid-template-rows: 50px 10px; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "box4 box5 box6";
-    padding: 0 50px;
+    /* padding: 0 50px; */
 }
 
 .chart_p1{
@@ -185,6 +190,17 @@ h2 {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+}
+
+.footer {
+  background-color: #152f67;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 
