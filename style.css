@@ -1,7 +1,8 @@
 body{
     background-color: white;
+    max-width: 700px;
+    margin: auto;
   }
-
 
 .header {
     display: flex;
@@ -52,7 +53,7 @@ body{
   align-items: center;
   width: 100%;
   height: 520px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.478) 0%, rgba(41, 29, 168, 0.273) 100%), url("material/police.jpeg");
+  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.478) 0%, rgba(41, 29, 168, 0.273) 100%), url("material/police.jpeg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +70,7 @@ body{
 }
 
 .intro p {
-  font-size: 16px;
+  font-size: 15px;
   color: rgb(255, 255, 255);
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   margin: 20px 0;
@@ -116,16 +117,10 @@ body{
   background-color: #243d9f8f;
 }
 
-.body {
-  margin-left: 45px;
-  margin-right: 45px;
-}
 
 .chartdivs{
-    /* height: 70vh; */
+    /* height: 80vh; */
     display: grid;
-    padding-top: 20px;
-    padding-bottom: 20px;
     /* grid-template-rows: 50px 10px; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "box1 box2 box3";
@@ -142,32 +137,25 @@ body{
     grid-area: box3;
 } 
 
-.chartdivs p {
-  font-size: 15px;
-  color: #152f67;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-}
+  .chartdivs p, .palermo p {
+    font-size: 15px;
+    color: #152f67;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
  
 h2 {
-  padding-top: 10px;
-  font-size: 24px;
+  font-size: 18px;
     color: #152f67;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
-
 .palermo {
-  /* height: 0vh; */
-  /* width: 80vh; */
-    padding-top: 20px;
-    padding-bottom: 20px;
     display: grid;
-    grid-gap: 25vh;
+    grid-gap: 0 25vh;
     /* grid-template-rows: 50px 10px; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "box4 box5 box6";
-    /* padding: 0 50px; */
 }
 
 .chart_p1{
@@ -181,38 +169,20 @@ h2 {
 } 
 
 .textos {
-  text-align: justify;
+  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
-}
-
-.barchart {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-}
-
-.footer {
-  background-color: #152f67;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  font-size: 15px;
 }
 
 
-
-  /* #plot1, #plot2, #plot3 {
-    width: 100%;
-    height: 300px;
-}     */
+  #box1, #box2, #box3 {
+    height: 5px;
+}    
 
 /* Cosas a hacer
   - arreglar las escalas de los mapas de los 3 años
-  - centrar la leyenda de los mapas de los 3 añoa
-  - hacer el dotgraph de las ciudades con mas inseguridad 
+  - centrar la leyenda de los mapas de los 3 años
+  - ordenar los meses del grafico de barras
+  - arreglar las barras
 
 */
