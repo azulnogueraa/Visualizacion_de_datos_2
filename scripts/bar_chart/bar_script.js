@@ -59,5 +59,34 @@ let chart = Plot.plot({
       },
     })
     // Agregamos chart al div#chart de index.html
-    d3.select('#chart').append(() => chart)
+    d3.select('#barchart').append(() => chart)
 });
+
+// d3.dsv(';', '../../data/dataset_2021.csv', d3.autoType).then(data => {   
+// let chart = Plot.plot({  
+//     marks: [
+//     Plot.rectY(
+//         data,
+//         Plot.binX(
+//             {
+//                 y: 'count',
+//                 title: d => JSON.stringify(d),
+//             },
+//             {
+//                 x: d => d3.timeParse('%d/%m/%Y')(d.fecha_ingreso), 
+//                 thresholds: d3.timeMonth,
+//                 fill: 'lightblue',
+//                 rx: 10,
+//             },
+//         ),
+//     ),
+//     ],
+//     y: {
+//     grid: true,
+//     label: 'Cantidad de reclamos',
+//     tickFormat: 'd',
+//     },
+//     })
+//     // Agregamos chart al div#chart de index.html
+//     d3.select('#chart').append(() => chart)
+//     })
