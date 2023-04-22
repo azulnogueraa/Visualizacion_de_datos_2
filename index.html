@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title class="bordered">Inseguridad En Buenos Aires</title>
+    <title>Inseguridad En Buenos Aires</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="material/police-officer-medium-dark-skin-tone-svgrepo-com.svg" type="png">
   </head>
+
+  
+
   <body>
 
     <header class="header">
@@ -16,6 +19,7 @@
 
     <main>
       <div class="intro">
+        <!-- <img class="policias" src="material/police.jpeg" alt="Imagen policial"> -->
         <h1>Inseguridad en Buenos Aires</h1>
         <p> <b>La seguridad es una de las principales preocupaciones de los vecinos y 
           del Gobierno de la Ciudad para seguir mejorando la convivencia urbana y 
@@ -23,22 +27,18 @@
           de los vecinos. Para ello, es necesario contar con información confiable y 
           de calidad sobre los hechos delictivos. Por este motivo, nos comprometimos 
           y publicamos un analisís de la inseguridad en Buenos Aires.</b></p>
-          
-          <!-- <p>La seguridad es una de las preocupaciones más importantes de los habitantes 
-            de la Ciudad de Buenos Aires. En este artículo, presentamos tres visualizaciones 
-            que te ayudarán a entender cómo está la situación de la inseguridad en la ciudad.</p> -->
         <a href="https://buenosaires.gob.ar/compromisos/mapa-del-delito-con-acceso-de-los-vecinos" target="_blank">
           <button class="blue_button">Más Información</button>
         </a>
       </div>
     </main>
-    
-  <div class="body">
-    <h2>¿Cuáles son las zonas más inseguras de la ciudad? Descubrí los barrios más peligrosos de la Ciudad de Buenos Aires</h2>
-      <p class="textos">En este mapa coroplético se pueden observar los barrios de la Ciudad de Buenos Aires con mayor cantidad 
-        de denuncias por inseguridad en los últimos años. Los datos muestran que la inseguridad no es un fenómeno uniforme en la ciudad, 
-        sino que hay barrios donde la criminalidad es más frecuente que en otros. Exploramos las razones detrás de esta variabilidad y 
-        te presentamos las experiencias de vecinos y expertos en seguridad que han vivido la inseguridad en carne propia. </p>
+      
+
+
+    <h2>Cambio de la inseguridad en los años </h2>
+    <p class="textos"> describir el analisis de los tres graficos que comparan los años de inseguridad. 
+      describir el analisis de los tres graficos que comparan los años de inseguridad. 
+      describir el analisis de los tres graficos que comparan los años de inseguridad.</p>
 
       <!-- grilla de mapas coropleticos -->
     <div class="chartdivs"> 
@@ -51,45 +51,24 @@
 
     </div>
 
-    
-    <h2>¡Alerta en Palermo! Mirá los sectores más inseguros del barrio más popular de Buenos Aires</h2>
-      <p class="textos">Palermo es uno de los barrios más populares de Buenos Aires, con una gran cantidad de bares, 
-        restaurantes y tiendas de moda. Sin embargo, en los últimos años también se ha convertido en una zona de 
-        preocupación para los vecinos debido a la inseguridad. En este mapa interactivo se pueden visualizar las zonas 
-        de Palermo donde se registran más denuncias por delitos. Además, te contamos las historias de algunos vecinos 
-        que han sido víctimas de la inseguridad en el barrio, y analizamos las medidas que se están tomando para garantizar 
-        la seguridad en la zona.</p>
-
+    <h2> ¿Como se distribuyen los reportes en Palermo? </h2>
+    <p class="textos"> describir el analisis de los tres graficos que comparan los años de inseguridad. 
+      describir el analisis de los tres graficos que comparan los años de inseguridad. 
+      describir el analisis de los tres graficos que comparan los años de inseguridad.</p>
 
     <div class="palermo">
         <!--chart1-->
-      <div id="chart_p1">  </div> 
+      <div id="chart_p1"> <p><b>Año 2020</b></p>  </div> 
         <!--chart2-->
-      <div id="chart_p2">  </div> 
+      <div id="chart_p2"> <p><b>Año 2021</b></p> </div> 
         <!--chart3-->
-      <div id="chart_p3">  </div> 
+      <div id="chart_p3"> <p><b>Año 2022</b></p> </div> 
     
     </div>
-
-    <h2>¿Mejoró la seguridad en Buenos Aires? Conocé la evolución de las denuncias en la ciudad en los últimos dos años</h2>
-      <p class="textos"> En este gráfico de barras podrás ver la evolución de las denuncias por inseguridad en la Ciudad de Buenos Aires durante 
-      los últimos dos años. Descubre si la situación ha mejorado o empeorado, y qué medidas se han tomado para combatir la inseguridad. 
-      Además, te presentamos un análisis detallado de las cifras y de las políticas públicas implementadas para mejorar la seguridad en la ciudad.</p>
-
-    <div class="barchart">
-      <div id="barchart"></div>
-    </div>
     
-  </div>
+    
+  
 
-  <footer class="footer">
-    <ul style="list-style-type: disc; margin-top: 0; margin-bottom: 0;">
-    <li> Fuentes </li>
-    <li>Autores </li>
-    <li>Metodología </li>
-    </ul>
-    <p>Copyright 2022©</p>
-  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
@@ -99,7 +78,6 @@
     <script src="./scripts/palermo_chart/p1_script.js"></script>
     <script src="./scripts/palermo_chart/p2_script.js"></script>
     <script src="./scripts/palermo_chart/p3_script.js"></script>
-    <script src="./scripts/bar_chart/bar_script.js"></script>
 
   </body>
 
