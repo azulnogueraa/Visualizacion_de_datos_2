@@ -21,6 +21,7 @@ let chart = Plot.plot({
       x: d => d3.timeFormat('%Y')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso)),
       y: () => 1,
       fill: d => colorScale(d3.timeFormat('%Y')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso))),
+      rx: 6,
       })),
     ],
     facet: {
@@ -34,7 +35,8 @@ let chart = Plot.plot({
     //   'septiembre','octubre','noviembre','diciembre'],
     // },
     x: { axis: null, 
-         paddingInner: 0.1 
+      paddingInner: 0.1,
+      barwidth: 100, 
     },
     y: {
       label: "Cantidad de denuncias",
