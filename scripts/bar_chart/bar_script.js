@@ -11,12 +11,16 @@ Promise.all([
 
 data = data2020.concat(data2021)
 
+let colorScale = d3.scaleOrdinal()
+.domain(data.map(d => d3.timeFormat('%Y')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso))))
+.range(d3.schemePaired);
+
 let chart = Plot.plot({
   marks: [
     Plot.barY(data, Plot.groupX({y: "count"}, {
       x: d => d3.timeFormat('%Y')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso)),
       y: () => 1,
-      fill: 'blue',
+      fill: d => colorScale(d3.timeFormat('%Y')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso))),
       })),
     ],
     facet: {
@@ -24,12 +28,11 @@ let chart = Plot.plot({
       x: d => d3.timeFormat('%m')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso)),
       label: "Meses",
       labelAnchor: "center",
-      
     },  
-    fx: {
-      domain: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
-      'septiembre','octubre','noviembre','diciembre'],
-    },
+    // fx: {
+    //   domain: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+    //   'septiembre','octubre','noviembre','diciembre'],
+    // },
     x: { axis: null, 
          paddingInner: 0.1 
     },
@@ -38,7 +41,8 @@ let chart = Plot.plot({
       labelAnchor: "top",
     },
     color: {
-      
+      legend: true,
+      className: "legend-clusters"
     }
   })
   d3.select('#chart').append(() => chart)
