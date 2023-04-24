@@ -47,5 +47,5 @@ let chart = Plot.plot({
       className: "legend-clusters"
     }
   })
-  d3.select('#chart').append(() => chart)
+  d3.select('#barchart').append(() => chart)
 })
