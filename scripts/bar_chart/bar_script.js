@@ -13,26 +13,33 @@ data = data2020.concat(data2021)
 
 let chart = Plot.plot({
   marks: [
-    Plot.barY(data, {
-      x: d => d3.timeFormat('%b/%Y')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso)),
+    Plot.barY(data, Plot.groupX({y: "count"}, {
+      x: d => d3.timeFormat('%Y')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso)),
       y: () => 1,
       fill: 'blue',
-      }),
+      })),
     ],
     facet: {
       data: data,
       x: d => d3.timeFormat('%m')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso)),
       label: "Meses",
       labelAnchor: "center",
+      
     },  
-    // fx: {
-    //   domain: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
-    // },
-    x: { axis: null, paddingInner: 0.1 },
+    fx: {
+      domain: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+      'septiembre','octubre','noviembre','diciembre'],
+    },
+    x: { axis: null, 
+         paddingInner: 0.1 
+    },
     y: {
       label: "Cantidad de denuncias",
       labelAnchor: "top",
     },
+    color: {
+      
+    }
   })
   d3.select('#chart').append(() => chart)
 })
