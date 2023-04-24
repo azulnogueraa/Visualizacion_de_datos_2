@@ -66,5 +66,5 @@ Promise.all([
     })
 
     /* Agregamos al DOM la visualización chartMap */
-    d3.select('#chart_coropletico').append(() => chartMap)
+    d3.select('#coropletico').append(() => chartMap)
 })
