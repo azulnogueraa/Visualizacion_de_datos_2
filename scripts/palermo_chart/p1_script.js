@@ -3,6 +3,8 @@ const dataFetch_p1 = d3.dsv(';', '../../data/dataset_2020.csv', d3.autoType)
 
 Promise.all([mapaFetch_p1, dataFetch_p1]).then(([barrios, data]) => {
   
+  const inseguridadPorBarrio = d3.group(data, d => d.domicilio_barrio) // crea un Map
+
   let chartMap = Plot.plot({
     // https://github.com/observablehq/plot#projection-options
     projection: {
@@ -13,7 +15,7 @@ Promise.all([mapaFetch_p1, dataFetch_p1]).then(([barrios, data]) => {
       Plot.geo(barrios, {
         stroke: 'black',
         fill: '#074594',
-        title: d => `${d.properties.BARRIO}\n${d.properties.DENUNCIAS} denuncias`,
+        title: d => `${d.properties.BARRIO}\n${inseguridadPorBarrio.get(d.properties.BARRIO)?.length || 0} reportes`,
         
       }),
 
