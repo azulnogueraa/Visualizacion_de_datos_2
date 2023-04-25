@@ -32,25 +32,38 @@
           <h2> Las denuncias de los Argentinos </h2>
           <p class="textos"> Comparación mes a mes de las denuncias de los Argetinos en los años 2020 y 2021. </p>
           <div id="barchart"> </div> 
+          <p class="textos">El siguiente gráfico de barras presenta una comparativa de las denuncias registradas 
+            por inseguridad en la Ciudad de Buenos Aires durante los últimos dos años. A través de esta herramienta
+             podrás conocer la evolución de la situación en materia de seguridad y evaluar si se han tomado medidas 
+             efectivas para combatir la problemática. Asimismo, en conjunto con las cifras presentadas, se ofrece un 
+             análisis detallado de las políticas públicas implementadas para mejorar la seguridad en la ciudad, con 
+             el fin de brindar un contexto integral y una comprensión cabal del tema.</p>
+
 
         
           <h2>  La evolución de la inseguridad en Buenos Aires </h2>
           <p class="textos"> Descubrí la evolución de los barrios más peligrosos de la Ciudad de Buenos Aires. </p>
+          <div id="legend">  </div> 
           <div class="chartdivs"> 
             <!--chart1-->
-          <div id="chart1"> <p><b>Año 2020</b></p>  </div> 
+          <div id="chart1"> <p><b>2020</b></p>  </div> 
             <!--chart2-->
-          <div id="chart2"> <p><b>Año 2021</b></p> </div>  
+          <div id="chart2"> <p><b>2021</b></p> </div>  
         </div>
-          <!-- <div id='#coropletico'></div> -->
+        <p class="textos">En el presente análisis, se abordará la problemática de la seguridad en la ciudad de 
+          Buenos Aires, en particular, se analizará el incremento de los índices de reclamos de mayor control policial
+           durante el período comprendido entre el año 2020 y 2021. La seguridad es un tema de suma importancia para 
+           la sociedad y es necesario abordarlo de manera rigurosa y científica. En este sentido, se realizará un 
+           análisis estadístico para determinar el comportamiento de los índices de reclamos y se establecerán 
+           conclusiones objetivas a partir de los datos obtenidos.</p>
 
           <h2> Alerta en Palermo </h2>
           <p class="textos">  Mirá los sectores más inseguros del barrio más popular de Buenos Aires. </p>
           <div class="palermo">
               <!--chart1-->
-            <div id="chart_p1"> <p><b>Año 2020</b></p>  </div> 
+            <div id="chart_p1"> <p><b>2020</b></p>  </div> 
               <!--chart2-->
-            <div id="chart_p2"> <p><b>Año 2021</b></p> </div> 
+            <div id="chart_p2"> <p><b>2021</b></p> </div> 
           </div>
 
           <p class="textos">En el transcurso de los últimos años, se ha registrado un incremento en los índices
@@ -61,32 +74,39 @@
               en la zona de referencia.</p>
         </div>
 
+  
+
 
 
         <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
         <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
 
-        <script src="./scripts/map_chart/coropletico.js"></script>
         <script src="./scripts/map_chart/2020_script.js"></script>
         <script src="./scripts/map_chart/2021_script.js"></script>
         <script src="./scripts/palermo_chart/p1_script.js"></script>
         <script src="./scripts/palermo_chart/p2_script.js"></script>
-        <script src="./scripts/palermo_chart/p3_script.js"></script>
         <script src="./scripts/bar_chart/bar_script.js"></script>
+        <script src="./scripts/map_chart/legend.js"></script>
 
 
     </body>
 
     <footer>
-      <p class="developers"><b>Developers:</b> Noguera Azul & Rocio Gonzalez</p>
+      <p class="developers"><b>Developers:</b> Noguera Azul & Gonzalez Rocio</p>
+      <p class="developers"><b>Fuentes:</b> Sistema Único de Atención Ciudadana (SUACI), 2020 y 2021</p>
+      <p class="developers"> <b> Metodologías:</b> ...</p>
 
-        <a href="https://www.argentina.gob.ar/contenidosdigitales/logos" target="_blank">
-          <img class="policias" src="https://www.argentina.gob.ar/sites/default/files/min_seguridad.png" alt="arg" height="50">
-        </a>
+      
 
-        <a href="https://github.com/azulnogueraa/vd_s1_parcial_Noguera_Gonzalez" target="_blank">
-          <img class="github" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="me" height="50" width="50">
-        </a>
+        <div class="rectangle2">
+          <a href="https://www.argentina.gob.ar/contenidosdigitales/logos" target="_blank">
+            <img class="policias" src="https://enohsa.gob.ar/img/logo.png" alt="arg" height="20">
+          </a>
+  
+          <a href="https://github.com/azulnogueraa/vd_s1_parcial_Noguera_Gonzalez" target="_blank">
+            <img class="github" src="material/github-142-svgrepo-com.svg" alt="me" height="30" width="50">
+          </a>
+        </div>
 
 
       
