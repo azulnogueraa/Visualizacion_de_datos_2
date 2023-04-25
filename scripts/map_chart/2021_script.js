@@ -31,7 +31,7 @@ Promise.all([mapaFetch2, dataFetch2]).then(([barrios, data]) => {
         stroke: 'grey',
         strokeOpacity: 5,
 
-        title: d => `${d.properties.BARRIO}\n${inseguridadPorBarrio.get(d.properties.BARRIO)?.length || 0} denuncias`,
+        title: d => `${d.properties.BARRIO}\n${inseguridadPorBarrio.get(d.properties.BARRIO)?.length || 0} reportes`,
       }),
       
     ],
