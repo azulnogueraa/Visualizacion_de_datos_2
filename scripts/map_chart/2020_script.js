@@ -15,7 +15,7 @@ Promise.all([mapaFetch1, dataFetch1]).then(([barrios, data]) => {
     color: {
       // Quantize continuo (cant. denuncias) -> discreto (cant. colores)
       type: 'quantize', 
-      n: 7,
+      n: 9,
       scheme: 'blues',
       label: 'grado de inseguridad',
       // legend: true,
@@ -24,7 +24,7 @@ Promise.all([mapaFetch1, dataFetch1]).then(([barrios, data]) => {
       Plot.geo(barrios, {
         fill: d => {
           let nombreBarrio = d.properties.BARRIO
-          let cantReclamos = inseguridadPorBarrio.get(nombreBarrio)?.length || 0
+          let cantReclamos = (inseguridadPorBarrio.get(nombreBarrio)?.length/1086)*100 || 0
           return cantReclamos
         },
         stroke: 'grey',
