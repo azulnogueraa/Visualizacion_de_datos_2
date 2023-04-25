@@ -83,6 +83,7 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     line-height: 1.5;
+    /* padding-top: 20px; */
 }
 
 .plot-43f8a2afd9f15{
@@ -124,6 +125,8 @@ p{
     grid-gap: 0 10vh;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "box4 box5";
+    margin-top: 10px ;
+    margin-bottom: 30px;
 }
 
 .chart_p1{
@@ -154,6 +157,7 @@ footer{
     background-color: rgba(213, 230, 255, 0.183);
     /* width: 100vw; */
     box-shadow: 0px 0px 5px 1px #00000029;
+    margin-top: 30px;
     
 }
 
@@ -171,16 +175,13 @@ footer{
 .github {
     width: 35px;
     padding-left: 30px;
+    margin: 5px
   }
 
 
 .policias {
     padding-left: 30px;
+    margin: 10px
 }
-.fuentes {
-    display: grid;
-    grid-gap: 0 10vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "box1 box2";
-}
+
 
