@@ -27,17 +27,16 @@ let chart = Plot.plot({
     facet: {
       data: data,
       x: d => d3.timeFormat('%m')(d3.timeParse('%d/%m/%Y')(d.fecha_ingreso)),
-      label: "Mes",
+      label: "Meses",
       labelAnchor: "center",
     },  
-    fx: {
-      tickFormat: (d) => {
-        const monthNames = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
-        return monthNames[d-1];
-      },
-    },
+    // fx: {
+    //   domain: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+    //   'septiembre','octubre','noviembre','diciembre'],
+    // },
     x: { axis: null, 
-      paddingInner: 0.05,
+      paddingInner: 0.1,
+      // barwidth: 100, 
     },
     y: {
       label: "Cantidad de denuncias",
@@ -47,8 +46,17 @@ let chart = Plot.plot({
       legend: true,
       className: "legend-clusters"
     },
-    width: 700,
-    height: 200,
+    width: 600,
+    height: 300,
+    options: {
+      scales: {
+          xAxes: [{
+              barThickness: 6,  // number (pixels) or 'flex'
+              maxBarThickness: 8 // number (pixels)
+          }]
+      }
+  }
+
   })
   d3.select('#barchart').append(() => chart)
 })
