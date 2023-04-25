@@ -12,7 +12,7 @@ Promise.all([mapaFetch_p1, dataFetch_p1]).then(([barrios, data]) => {
     marks: [
       Plot.geo(barrios, {
         stroke: 'black',
-        fill: '#1d458f',
+        fill: '#074594',
         title: d => `${d.properties.BARRIO}\n${d.properties.DENUNCIAS} denuncias`,
         
       }),
@@ -30,7 +30,7 @@ Promise.all([mapaFetch_p1, dataFetch_p1]).then(([barrios, data]) => {
         src: '../../material/police-car-light-svgrepo-com.svg'
       })
     ],
-    
+    height: 550,
   })
 
   /* Agregamos al DOM la visualización chartMap */
