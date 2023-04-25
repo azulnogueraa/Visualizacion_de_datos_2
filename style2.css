@@ -1,7 +1,9 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* max-width: 800px; */
+    /* max-width: 700px; */
     margin:auto;
+    /* padding-left: 15px;
+    padding-right: 15px; */
 }
 
 .rectangle{
@@ -12,7 +14,7 @@ body{
 }
 
 .rectangle h6{
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .rectangle h6{
@@ -40,6 +42,9 @@ body{
     color: #152f67;
     margin-bottom: 5px;
 }
+.intro p{
+    font-size: 16px;
+}
 
 p{
     font-size: small;
@@ -48,19 +53,22 @@ p{
     max-width: 800px; 
 }
 
-.body h2 {
-    font-size: 18px;
+.cuerpo h2 {
+    font-size: 24px; 
     color: #152f67;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;  
     margin-bottom: 0;
+    margin-top: 20px;
 }
 
-.body p {
-    margin-top: 5px;
+.cuerpo p {
+    margin-top: 10px;
+    align-items: center;
+    font-size: 16px;
 }
 
-.body {
+.cuerpo {
     display: flex;
     flex-direction: column; 
     max-width: 700px ;
@@ -76,6 +84,11 @@ p{
     font-size: 14px;
     line-height: 1.5;
 }
+
+.plot-43f8a2afd9f15{
+    margin: auto;
+}
+
 
 .chartdivs{
     /* height: 80vh; */
@@ -111,7 +124,6 @@ p{
     grid-gap: 0 10vh;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "box4 box5";
-    
 }
 
 .chart_p1{
@@ -123,10 +135,12 @@ p{
 
 #barchart {
     padding-bottom: 30px;
+    margin-top: 10px ;
+    /* margin: auto; */
 }
 
 .palermo p {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
     color: #152f67;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -134,14 +148,39 @@ p{
   }
 
 footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* flex-direction: column; */
+    /* justify-content: center;  */
+    /* align-items: center; */
     background-color: rgba(213, 230, 255, 0.183);
-    width: 100vw;
-    padding: 100px;
-    padding-top: 10px;
+    /* width: 100vw; */
     box-shadow: 0px 0px 5px 1px #00000029;
+    
+}
+
+.developers {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    /* text-decoration: none; */
+    text-align: center;
+    width: 100vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.github {
+    width: 35px;
+    padding-left: 30px;
+  }
+
+
+.policias {
+    padding-left: 30px;
+}
+.fuentes {
+    display: grid;
+    grid-gap: 0 10vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "box1 box2";
 }
 
