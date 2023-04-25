@@ -29,7 +29,6 @@ Promise.all([mapaFetch_p1, dataFetch_p1]).then(([barrios, data]) => {
         y: 'lat',
         src: '../../material/police-car-light-svgrepo-com.svg'
       })
-      
     ],
     
   })
