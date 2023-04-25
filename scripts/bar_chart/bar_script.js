@@ -45,11 +45,12 @@ let chart = Plot.plot({
       labelAnchor: "top",
     },
     color: {
-      legend: true,
-      className: "legend-clusters"
+      domain: ["2020", "2021"],
+      range: d3.schemePaired,
+      legend: true
     },
     width: 700,
-    height: 200,
+    height: 300,
     options: {
       scales: {
           xAxes: [{
