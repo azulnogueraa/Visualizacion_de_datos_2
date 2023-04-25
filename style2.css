@@ -77,6 +77,35 @@ p{
     line-height: 1.5;
 }
 
+.chartdivs{
+    /* height: 80vh; */
+    display: grid;
+    /* grid-template-rows: 50px 10px; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "box1 box2";
+    
+}
+
+.chart1{
+    grid-area: box1;
+}
+.chart2{
+    grid-area: box2;
+}
+
+  .chartdivs p, .palermo p {
+    font-size: 15px;
+    color: #152f67;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+
+  .map_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+    margin: auto;
+  }
 .palermo {
     display: grid;
     grid-gap: 0 10vh;
@@ -92,6 +121,9 @@ p{
   grid-area: box5;
 }
 
+#barchart {
+    padding-bottom: 30px;
+}
 
 .palermo p {
     font-size: 12px;
