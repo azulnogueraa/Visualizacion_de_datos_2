@@ -19,7 +19,7 @@ Promise.all([mapaFetch1, dataFetch1]).then(([barrios, data]) => {
       n: 7,
       scheme: 'blues',
       label: 'grado de inseguridad',
-      legend: true,
+      // legend: true,
     },
 
     marks: [
@@ -38,6 +38,7 @@ Promise.all([mapaFetch1, dataFetch1]).then(([barrios, data]) => {
       }),
       
     ],
+    height: 550,
   })
 
 
