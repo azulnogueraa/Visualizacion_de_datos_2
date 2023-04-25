@@ -16,7 +16,7 @@ Promise.all([mapaFetch1, dataFetch1]).then(([barrios, data]) => {
     color: {
       // Quantize continuo (cant. denuncias) -> discreto (cant. colores)
       type: 'quantize', 
-      n: 9,
+      n: 7,
       scheme: 'blues',
       label: 'grado de inseguridad',
       legend: true,
