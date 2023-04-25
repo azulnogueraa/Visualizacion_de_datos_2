@@ -5,9 +5,8 @@ Promise.all([mapaFetch1, dataFetch1]).then(([barrios, data]) => {
 
   /* Agrupamos reclamos de inseguridad x barrio */
   const inseguridadPorBarrio = d3.group(data, d => d.domicilio_barrio) // crea un Map
-  console.log('inseguridadPorBarrio', inseguridadPorBarrio)
-  
-  
+  console.log(inseguridadPorBarrio)
+
   let chartMap = Plot.plot({
     projection: {
       type: 'mercator',
@@ -21,20 +20,17 @@ Promise.all([mapaFetch1, dataFetch1]).then(([barrios, data]) => {
       label: 'grado de inseguridad',
       // legend: true,
     },
-
     marks: [
-
       Plot.geo(barrios, {
         fill: d => {
           let nombreBarrio = d.properties.BARRIO
-          let cantReclamos = (inseguridadPorBarrio.get(nombreBarrio).length/1086)*100
+          let cantReclamos = inseguridadPorBarrio.get(nombreBarrio)?.length || 0
           return cantReclamos
         },
         stroke: 'grey',
         strokeOpacity: 5,
 
-        title: d => `${d.properties.BARRIO}\n${d.properties.DENUNCIAS} denuncias`,
-        // title: d => `trapito`,
+        title: d => `${d.properties.BARRIO}\n${inseguridadPorBarrio.get(d.properties.BARRIO)?.length || 0} denuncias`,
       }),
       
     ],
