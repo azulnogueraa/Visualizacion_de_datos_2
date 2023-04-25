@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style2.css">
         <link rel="shortcut icon" href="material/police-officer-medium-dark-skin-tone-svgrepo-com.svg" type="png">
+        
     </head>
 
     <body>    
@@ -27,10 +28,22 @@
             </div>
         </main>
 
-        <div class="coropleticos">
+        <div class="body">
+
+          <h2> el de ro </h2>
+          <p class="textos"> Describir el analisis de los tres graficos que comparan los años de inseguridad. </p>
+          <div id="barchart"> </div> 
+
+        
           <h2>  La evolución de la inseguridad en Buenos Aires </h2>
           <p class="textos"> Descubrí la evolución de los barrios más peligrosos de la Ciudad de Buenos Aires. </p>
-          <div id='#coropletico'></div>
+          <div class="chartdivs"> 
+            <!--chart1-->
+          <div id="chart1"> <p><b>Año 2020</b></p>  </div> 
+            <!--chart2-->
+          <div id="chart2"> <p><b>Año 2021</b></p> </div>  
+        </div>
+          <!-- <div id='#coropletico'></div> -->
 
           <h2> Alerta en Palermo </h2>
           <p class="textos">  Mirá los sectores más inseguros del barrio más popular de Buenos Aires. </p>
@@ -40,27 +53,23 @@
               <!--chart2-->
             <div id="chart_p2"> <p><b>Año 2021</b></p> </div> 
           </div>
-          
+
           <p class="textos">En el transcurso de los últimos años, se ha registrado un incremento en los índices
             de inseguridad en la zona de Palermo, lo cual ha generado un número creciente de denuncias por parte de
              la ciudadanía, en relación a la necesidad de un mayor despliegue policial en la zona. En este sentido, 
              se procederá a analizar los reportes correspondientes al período comprendido entre los años 2020 y 2021,
               a fin de establecer los patrones y tendencias observadas en cuanto a la demanda de presencia policial 
               en la zona de referencia.</p>
-
-
-          <h2> el de ro </h2>
-          <p class="textos"> Describir el analisis de los tres graficos que comparan los años de inseguridad. </p>
-          <div id='#'></div>
-          <div id="barchart"> <p><b></b></p> </div> 
-
-
         </div>
+
+
 
         <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
         <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
 
         <script src="./scripts/map_chart/coropletico.js"></script>
+        <script src="./scripts/map_chart/2020_script.js"></script>
+        <script src="./scripts/map_chart/2021_script.js"></script>
         <script src="./scripts/palermo_chart/p1_script.js"></script>
         <script src="./scripts/palermo_chart/p2_script.js"></script>
         <script src="./scripts/palermo_chart/p3_script.js"></script>
@@ -72,5 +81,6 @@
     <!-- <footer>
 
     </footer> -->
+    
 
 </html>
