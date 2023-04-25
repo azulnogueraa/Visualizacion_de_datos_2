@@ -5,8 +5,6 @@ Promise.all([mapaFetch2, dataFetch2]).then(([barrios, data]) => {
 
   /* Agrupamos reclamos de inseguridad x barrio */
   const inseguridadPorBarrio = d3.group(data, d => d.domicilio_barrio) // crea un Map
-  console.log('inseguridadPorBarrio', inseguridadPorBarrio)
-  
   
   let chartMap2 = Plot.plot({
     projection: {
@@ -16,7 +14,7 @@ Promise.all([mapaFetch2, dataFetch2]).then(([barrios, data]) => {
     color: {
       // Quantize continuo (cant. denuncias) -> discreto (cant. colores)
       type: 'quantize', 
-      n: 9,
+      n: 7,
       scheme: 'blues',
       label: 'grado de inseguridad',
       legend: true,
