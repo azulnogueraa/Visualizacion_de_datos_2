@@ -12,7 +12,7 @@ Promise.all([mapaFetch_p2, dataFetch_p2]).then(([barrios, data]) => {
     marks: [
       Plot.geo(barrios, {
         stroke: 'black',
-        fill: '#3a6fb0',
+        fill: '#074594',
         title: d => `${d.properties.BARRIO}\n${d.properties.DENUNCIAS} denuncias`,
         
       }),
@@ -31,7 +31,7 @@ Promise.all([mapaFetch_p2, dataFetch_p2]).then(([barrios, data]) => {
       })
       
     ],
-    
+    height: 550,
   })
 
   /* Agregamos al DOM la visualización chartMap */
