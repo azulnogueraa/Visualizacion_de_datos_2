@@ -149,6 +149,7 @@ h2 {
     color: #152f67;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    /* margin: 0; */
 }
 .palermo {
     display: grid;
@@ -178,6 +179,7 @@ h2 {
   #box1, #box2, #box3 {
     height: 5px;
 }    
+
 
 /* Cosas a hacer
   - arreglar las escalas de los mapas de los 3 años
