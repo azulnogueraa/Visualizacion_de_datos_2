@@ -1,83 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Inseguridad En Buenos Aires</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="material/police-officer-medium-dark-skin-tone-svgrepo-com.svg" type="png">
-  </head>
+<!DOCTYPE html> 
+<html lang=""en>
+
+    <head>
+        <title>Inseguridad En Buenos Aires</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="material/police-officer-medium-dark-skin-tone-svgrepo-com.svg" type="png">
+        
+    </head>
+
+    <body>    
+        
+        <main>
+            <div class="rectangle">
+                    <h6> Ministerio de Seguridad </h6>
+            </div>
+
+
+            <div class="intro">
+                <h1>Inseguridad en Buenos Aires</h1>
+                <p>El incremento sostenido de demandas por mayor seguridad otorgan un lugar preponderante a las estadísticas sobre criminalidad. 
+                  Sin embargo, la recolección de datos es una tarea compleja. En este artículo nos proponemos hacer un diagnóstico y una 
+                  evaluación de los sistemas de información en materia de seguridad pública de acceso público online en 
+                  Buenos Aires entre 2020 y 2021. </p>
+            </div>
+        </main>
+
+        <div class="cuerpo">
+
+          <h2> Reportes policiales de cada mes entre 2020 y 2021  </h2>
+          <p class="textos"> Comparación mes a mes de las denuncias de los Argetinos en los años 2020 y 2021. </p>
+          <div id="barchart"> </div> 
+          <p class="textos">El siguiente gráfico de barras presenta una comparativa de las denuncias registradas 
+            por inseguridad en la Ciudad de Buenos Aires durante los últimos dos años. A través de esta herramienta
+             podrás conocer la evolución de la situación en materia de seguridad y evaluar si se han tomado medidas 
+             efectivas para combatir la problemática. Asimismo, en conjunto con las cifras presentadas, se ofrece un 
+             análisis detallado de las políticas públicas implementadas para mejorar la seguridad en la ciudad, con 
+             el fin de brindar un contexto integral y una comprensión cabal del tema.</p>
+
+
+        
+          <h2>  La evolución de la inseguridad en Buenos Aires </h2>
+          <p class="textos"> Descubrí la evolución de los barrios más peligrosos de la Ciudad de Buenos Aires. </p>
+          <div id="legend">  </div> 
+          <div class="chartdivs"> 
+            <!--chart1-->
+          <div id="chart1"> <p><b>2020</b></p>  </div> 
+            <!--chart2-->
+          <div id="chart2"> <p><b>2021</b></p> </div>  
+        </div>
+        <p class="textos">En el presente análisis, se abordará la problemática de la seguridad en la ciudad de 
+          Buenos Aires, en particular, se analizará el incremento de los índices de reclamos de mayor control policial
+           durante el período comprendido entre el año 2020 y 2021. La seguridad es un tema de suma importancia para 
+           la sociedad y es necesario abordarlo de manera rigurosa y científica. En este sentido, se realizará un 
+           análisis estadístico para determinar el comportamiento de los índices de reclamos y se establecerán 
+           conclusiones objetivas a partir de los datos obtenidos.</p>
+
+          <h2> Reportes policiales en Palermo entre 2020 y 2021 </h2>
+          <p class="textos">  Mirá los sectores más inseguros del barrio más popular de Buenos Aires. </p>
+          <div class="palermo">
+              <!--chart1-->
+            <div id="chart_p1"> <p><b>2020</b></p>  </div> 
+              <!--chart2-->
+            <div id="chart_p2"> <p><b>2021</b></p> </div> 
+          </div>
+
+          <p class="textos">En el transcurso de los últimos años, se ha registrado un incremento en los índices
+            de inseguridad en la zona de Palermo, lo cual ha generado un número creciente de denuncias por parte de
+             la ciudadanía, en relación a la necesidad de un mayor despliegue policial en la zona. En este sentido, 
+             se procederá a analizar los reportes correspondientes al período comprendido entre los años 2020 y 2021,
+              a fin de establecer los patrones y tendencias observadas en cuanto a la demanda de presencia policial 
+              en la zona de referencia.</p>
+        </div>
 
   
 
-  <body>
 
-    <header class="header">
-      <p class="logo"><b>Developers:</b> Noguera Azul & Rocio Gonzalez</p>
-      <a href="https://github.com/azulnogueraa/vd_s1_parcial_Noguera_Gonzalez.git" target="_blank">
-        <img class="github" src="material/github-142-svgrepo-com.svg" alt="me">
-      </a>
-    </header>
 
-    <main>
-      <div class="intro">
-        <!-- <img class="policias" src="material/police.jpeg" alt="Imagen policial"> -->
-        <h1>Inseguridad en Buenos Aires</h1>
-        <p> <b>La seguridad es una de las principales preocupaciones de los vecinos y 
-          del Gobierno de la Ciudad para seguir mejorando la convivencia urbana y 
-          el aprovechamiento del espacio público como lugar de encuentro e integración 
-          de los vecinos. Para ello, es necesario contar con información confiable y 
-          de calidad sobre los hechos delictivos. Por este motivo, nos comprometimos 
-          y publicamos un analisís de la inseguridad en Buenos Aires.</b></p>
-        <a href="https://buenosaires.gob.ar/compromisos/mapa-del-delito-con-acceso-de-los-vecinos" target="_blank">
-          <button class="blue_button">Más Información</button>
-        </a>
-      </div>
-    </main>
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+
+        <script src="./scripts/map_chart/2020_script.js"></script>
+        <script src="./scripts/map_chart/2021_script.js"></script>
+        <script src="./scripts/palermo_chart/p1_script.js"></script>
+        <script src="./scripts/palermo_chart/p2_script.js"></script>
+        <script src="./scripts/bar_chart/bar_script.js"></script>
+        <script src="./scripts/map_chart/legend.js"></script>
+
+
+    </body>
+
+    <footer>
+      <p class="developers" id="dev"><b>Developers:</b> Noguera Azul & Gonzalez Rocio</p>
+      <p class="developers" id="fue"><b>Fuentes:</b> Sistema Único de Atención Ciudadana (SUACI), 2020 y 2021</p>
+      <p class="developers" id="met"> <b> Metodologías:</b> Durante el desarrollo del proyecto, se procedió a 
+        analizar los datos recolectados a través de dos enfoques distintos: la cantidad de reportes por barrio y 
+        la cantidad de reportes por fecha. Con el objetivo de optimizar la información y enriquecer el análisis, 
+        se generaron dos nuevos conjuntos de datos filtrando los contactos registrados bajo la categoría de seguridad. 
+        Adicionalmente, en algunas ocasiones se llevó a cabo la unión de bases de datos mediante el uso de la función 
+        "concat".</p>
+
       
 
-
-    <h2>Cambio de la inseguridad en los años </h2>
-    <p class="textos"> Describir el analisis de los tres graficos que comparan los años de inseguridad. 
-      describir el analisis de los tres graficos que comparan los años de inseguridad. 
-      describir el analisis de los tres graficos que comparan los años de inseguridad.</p>
-
-      <!-- grilla de mapas coropleticos -->
-    <div class="chartdivs"> 
-		    <!--chart1-->
-      <div id="chart1"> <p><b>Año 2020</b></p>  </div> 
-		    <!--chart2-->
-      <div id="chart2"> <p><b>Año 2021</b></p> </div> 
-		    <!--chart3-->
-      <div id="chart3">  <p><b>Año 2022</b></p> </div> 
-
-    </div>
-
-    <h2> Alerta en Palermo </h2>
-    <p class="textos"> Describir el analisis de los tres graficos que comparan los años de inseguridad. 
-      describir el analisis de los tres graficos que comparan los años de inseguridad. 
-      describir el analisis de los tres graficos que comparan los años de inseguridad.</p>
-
-    <div class="palermo">
-        <!--chart1-->
-      <div id="chart_p1"> <p><b>Año 2020</b></p>  </div> 
-        <!--chart2-->
-      <div id="chart_p2"> <p><b>Año 2021</b></p> </div> 
-        <!--chart3-->
-      <div id="chart_p3"> <p><b>Año 2022</b></p> </div> 
-    
-    </div>
-    
-    
+        <div class="rectangle2">
+          <a href="https://www.argentina.gob.ar/contenidosdigitales/logos" target="_blank">
+            <img class="policias" src="https://enohsa.gob.ar/img/logo.png" alt="arg" height="20">
+          </a>
   
+          <a href="https://github.com/azulnogueraa/vd_s1_parcial_Noguera_Gonzalez" target="_blank">
+            <img class="github" src="material/github-142-svgrepo-com.svg" alt="me" height="30" width="50">
+          </a>
+        </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
-    <script src="./scripts/map_chart/2020_script.js"></script>
-    <script src="./scripts/map_chart/2021_script.js"></script>
-    <script src="./scripts/palermo_chart/p1_script.js"></script>
-    <script src="./scripts/palermo_chart/p2_script.js"></script>
-    <script src="./scripts/map_chart/coropletico.js"></script>
-
-  </body>
+      
+    </footer>
+    
 
 </html>
